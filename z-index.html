@@ -66,6 +66,13 @@
            var w = $("form").width();
            $("form").height(0.5 * w);
        });
+        $(function(){
+            $('.some_block').height($('.some_block').width()/2.5);
+
+            $(window).resize(function(){
+                $('.some_block').height($('.some_block').width()/2.5);
+            });
+        });
     });
 </script>
 </body>
